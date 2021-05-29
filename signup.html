@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Sign Up</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <p>Sign Up</p>
+            <div form class="form-wrapper" >
+                  <div class="details">
+                    <label htmlFor="email">Email</label>
+                    <input type="email" placeholder="email" id="email"/>
+                  </div>
+                  <div class="details">
+                    <label htmlFor="password">Password</label>
+                    <input type="password" placeholder="password" id="password"/>
+                  </div>
+                  <div class="details">
+                    <label htmlFor="name">Name</label>
+                    <input type="text" placeholder="name" id="name"/>
+                  </div>
+                  <div class="details">
+                    <label htmlFor="dob">Date of Birth</label>
+                    <input type="date" placeholder="D.O.B." id="dob"/>
+                  </div>
+                  <div class="details">
+                    <label htmlFor="placeOfBirth">Place Of Birth</label>
+                    <input type="text" placeholder="Place Of Birth" id="placeOfBirth"/>
+                  </div>
+                  <div class="btn">
+                    <button onclick="signUp()" id="signup">Sign Up</button>
+                  </div>
+                </form>
+        </div>
+        <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-database.js"></script>
+        <script src="form.js"></script>
+    </body>
+</html>
